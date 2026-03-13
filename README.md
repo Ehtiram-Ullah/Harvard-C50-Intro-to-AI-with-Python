@@ -42,27 +42,6 @@ The CS50 AI course covers several important AI concepts, including:
 - Neural Networks
 - Natural Language Processing
 
-## Repository Structure
-/
-│
-├── search/
-│ └── solutions and experiments
-│
-├── knowledge/
-│ └── logic-based AI implementations
-│
-├── uncertainty/
-│ └── probabilistic models
-│
-├── optimization/
-│ └── optimization algorithms
-│
-├── learning/
-│ └── machine learning implementations
-│
-│
-└── README.md
-
 
 ## Technologies Used
 
