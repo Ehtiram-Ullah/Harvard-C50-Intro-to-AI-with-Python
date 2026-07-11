@@ -3,6 +3,7 @@ import sys
 import time
 
 import tictactoe as ttt
+import os
 
 pygame.init()
 size = width, height = 600, 400
@@ -13,9 +14,16 @@ white = (255, 255, 255)
 
 screen = pygame.display.set_mode(size)
 
-mediumFont = pygame.font.Font("OpenSans-Regular.ttf", 28)
-largeFont = pygame.font.Font("OpenSans-Regular.ttf", 40)
-moveFont = pygame.font.Font("OpenSans-Regular.ttf", 60)
+
+# Get the directory where runner.py itself is located
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+
+# Build absolute paths to the font file
+font_path = os.path.join(BASE_DIR, "OpenSans-Regular.ttf")
+
+mediumFont = pygame.font.Font(font_path, 28)
+largeFont = pygame.font.Font(font_path, 40)
+moveFont = pygame.font.Font(font_path, 60)
 
 user = None
 board = ttt.initial_state()
